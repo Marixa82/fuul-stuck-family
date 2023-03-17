@@ -1,1 +1,93 @@
+.unique-components-title {
+    max-width: 411px;
+   
+    color: var(--tex-color-black);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    /* or 117% */
 
+    margin-bottom: 24px;
+     margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.unique-components-title span {
+    color: var(--color-hover-orange);
+}
+.unique-components-title-text {
+    max-width: 486px;
+    color: var(--tex-color-black);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+/* or 129% */
+
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+letter-spacing: -0.02em;
+}
+
+.unique-components-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 19px;
+    align-items: center;
+}
+.unique-components-item {
+   width: 335px;
+   height: 270px;
+  
+  
+    background: var(--color-hover-orange);
+    border-radius: 15px;
+}
+.unique-components-item-white {
+    background: none;
+    border: 1px solid var(--color-hover-orange);
+    border-radius: 15px;
+}
+.unique-components-item-nuts {
+    background: var(--color-hover-dark);
+}
+.unique-components-img-text {
+    text-align: left;
+    margin-bottom: 28px;
+    margin-left: 28px;
+    font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+/* identical to box height, or 129% */
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: var(--tex-color-white);
+}
+.unique-components-img-text-white {
+    text-align: left;
+    margin-bottom: 28px;
+    margin-left: 28px;
+    font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+/* identical to box height, or 129% */
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+color: var(--tex-color-black);
+}
+.unique-components-block {
+    margin-top: 28px;
+    margin-right: 55px;
+    margin-left: 56px;
+    margin-bottom:25px;
+ /* display: flex;
+ flex-direction: column;
+ align-items: center; */
+}
