@@ -9,14 +9,18 @@
         <h3 class="buy-now-title">buy now</h3>
         <div class="buy-now swiper">
             <ul class="buy-now swiper-wrapper">
-                <li class="swipe-slide">
-                    <img src="./img/chocolate.jpg" srcset="./img/chocolate.jpg 1x,
-                            ./img/chocolate-2x.jpg 2x" alt="chocolate" class="buy-now-photo" width="167">
+                <li class="swiper-slide">
+                    <img src="../img/img-buyNow/chocolate.jpg" 
+                    srcset="../img/img-buyNow/chocolate.jpg 1x,
+                    ../img/img-buyNow/chocolate-2x.jpg 2x" 
+                    alt="chocolate"
+                    class="buy-now-photo"
+                    width="167">
                     <button type="button" class="buy-now-photo-button">
                         100 g
                     </button>
                 </li>
-                <!-- <li class="swiper-slide">
+                <li class="swiper-slide">
                         <img src="" alt="chocolate">
                         <button type="button" class="buy-now-photo-button">
                             200 g
@@ -28,16 +32,49 @@
                         <button type="button" class="buy-now-photo-button">
                             300 g
                         </button>
-                    </li> -->
+                    </li>
 
 
-                <!-- <div class="swiper-pagination"></div> -->
+                
             </ul>
-
-
-
-
+            <div class="swiper-pagination"></div>
         </div>
+        <form class="buy-now-form" autocomplete="off">
+                <label class="buy-now-formField">
+                    <span class="label-name">Personal information</span>
+               
+                <input class="input" type="text" name="name" autofocus placeholder="Name">
+                </label>
+                
+                <label class="buy-now-formField">
+                    <input class="input" type="text" name="surname" placeholder="Surname">
+                </label>
+
+                <label class="buy-now-formField">
+                    <span class="label-name">Email</span>
+                    
+                    <input class="input" type="text" name="email" placeholder="Enter your email">
+                </label>
+
+                <label class="buy-now-formField">
+                    <span class="label-name">Phone number</span>
+                    <input class="input" type="tel" name="phone" placeholder="Phone number">
+                </label>
+
+                <label class="buy-now-formField">
+                    <span class="label-name">Card number</span>
+                    <input class="input" type="tel" name="card" maxlength="16" placeholder="Enter card">
+                    </label>
+                    
+                    <label class="buy-now-formField comment"><span class="label-name">Comment</span>
+                        <textarea name="textarea" placeholder="Enter text" class="form-comment"></textarea>
+                    </label>
+                    
+                    <button type="submit" class="form-button button">
+                        <span class="button-text">Send</span>
+                    </button>
+                </form>
+
 
 
     </div>
