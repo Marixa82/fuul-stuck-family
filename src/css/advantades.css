@@ -7,6 +7,12 @@
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 }
 .benefits-list {
   display: flex;
@@ -17,13 +23,7 @@
   width: 308px;
   padding-right: 28px;
 }
-.benefits-item::after {
-  content: ('');
-  width: 124px;
-  height: 0px;
-  transform: rotate(90deg);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
+
 .benefits-decor {
   position: relative;
   width: 62px;
@@ -52,7 +52,6 @@
   color: #ffffff;
 }
 .benefits-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
@@ -71,16 +70,13 @@
     flex-wrap: wrap;
     justify-content: start;
     align-items: flex-end;
-    padding: 50px 32px;
+    padding: 50px 17px;
     gap: 32px;
   }
   .benefits-container {
-    padding: 0;
     flex-basis: calc((100% - 32px) / 2);
   }
-  /* .benefits-item:not(:last-child) {
-    margin-bottom: 0;
-  } */
+
   .benefits-item:last-child {
     padding-bottom: 35px;
     padding-right: 0;
@@ -88,22 +84,26 @@
 }
 @media screen and (min-width: 1200px) {
   .benefits-item:not(:last-child) {
-    display: flex;
+    position: relative;
+    display: block;
+    /* display: flex; */
+    width: 326px;
     flex-direction: column;
     padding-right: 18px;
-    /* width: 124px;
-    height: 0px;
-
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transform: rotate(90deg); */
   }
+
   .benefits-list {
     flex-direction: row;
     gap: 70px;
-    align-items: center;
-    padding: 50px;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px 35px;
   }
-  .benefits-item:not(:last-child):after {
+  .benefits-item:last-child {
+    padding-right: 0;
+  }
+  .benefits-item:not(:last-child)::after {
+    position: absolute;
     content: '';
     width: 124px;
     height: 0;
@@ -111,9 +111,12 @@
     transform: rotate(90deg);
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: block;
-    bottom: 0;
+
+    left: 264px;
+    bottom: 110px;
   }
   .benefits-wrap {
-    order: -1;
+    display: block;
+    width: 308px;
   }
 }
