@@ -81,8 +81,8 @@
   }
 
   .subscribe-btn:hover {
-    color: var(--color-hover-orange);
     background: #fcf1e0;
+    color: var(--color-hover-orange);
     transition: var(--transition-focus);
   }
 }
@@ -153,6 +153,12 @@
     background: var(--color-hover-orange);
     border-radius: 100px;
     border: none;
+  }
+
+  .subscribe-btn:hover {
+    background: #fcf1e0;
+    color: var(--color-hover-orange);
+    transition: var(--transition-focus);
   }
 }
 
