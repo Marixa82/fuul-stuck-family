@@ -73,11 +73,10 @@
     
     color: #FD9222;
 }
-.swiper-slide {
+.buy-now-cont {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 32px 32px 0;
     margin: 32px 40px 14px;
 
     width: 231px;
@@ -113,16 +112,13 @@
 
 
 /* <----------swiper----------> */
-.buy-now.swiper {
+/* .buy-now.swiper {
     margin-bottom: 32px;
 }
 .swiper-pagination {
-    height: 13px;
-    width: 28px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FD9222;
-}
+    position: static;
+    color: #FD9222;
+} */
 
 /* <----------swiper----------> */
 
@@ -156,6 +152,9 @@
 }
 textarea {
     resize: none;
+}
+.buy-now-textarea {
+    outline: none;
 }
 .buy-now-formField .input {
     padding: 14px 0 14px 18px;
