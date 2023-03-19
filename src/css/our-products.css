@@ -1,0 +1,131 @@
+.products {
+    padding-top: 72px;
+}
+
+.products-container {
+    width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-our {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.title-color {
+    color: #FD9222;
+}
+
+
+
+.swiper-pagination {
+    position: static;
+}
+
+ .products-list {
+margin-bottom: 20px;
+ }
+
+.products-item {
+    width: 230px !important;
+    padding: 32px 52px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.products-photo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-title {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.products-text {
+    margin-bottom: 18px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.products-span {
+    padding: 8px 20px;
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #111111;
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FD9222;
+    width: 28px;
+    height: 13px;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .products {
+        padding-top: 100px;
+    }
+
+    .products-container {
+        width: 735px;
+        padding-left: 33px;
+        padding-right: 0;
+    }
+
+    .products-our {
+        margin-bottom: 50px;
+    }
+    .products-list {
+        gap: 18px;
+    }
+    .products-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products {
+        padding-top: 128px;
+    }
+
+    .products-container {
+        width: 1134px;
+        padding-right: 33px;
+    }
+}
