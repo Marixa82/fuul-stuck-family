@@ -1,3 +1,6 @@
+.top-sellers-section {
+  padding-bottom: 72px;
+}
 .top-sellers-title {
   font-weight: 600;
   font-size: 20px;
@@ -73,6 +76,10 @@
     max-width: 734px;
   }
 
+  .top-sellers-section {
+    padding-bottom: 100px;
+  }
+
   .top-sellers-btn {
     width: 162px;
     height: 50px;
@@ -107,6 +114,10 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1166px;
+  }
+
+  .top-sellers-section {
+    padding-bottom: 128px;
   }
 
   .top-sellers-item:last-child {
