@@ -1,6 +1,6 @@
 .footer {
   background-color: #1e1823;
-  padding-top: 32px;
+  /* padding-top: 32px; */
   padding-bottom: 32px;
 }
 
@@ -36,6 +36,7 @@
 
 .footer-cos-icon {
   stroke: white;
+  fill: transparent;
   border: none;
 }
 
@@ -97,8 +98,6 @@
   .container {
     width: 375px;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -106,12 +105,10 @@
   .container {
     width: 704px;
     margin: auto;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   .footer {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-bottom: 50px;
   }
 
@@ -155,8 +152,6 @@
   .container {
     width: 1136px;
     margin: auto;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .footer-soc {
     margin-right: 32px;
