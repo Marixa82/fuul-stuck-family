@@ -199,13 +199,20 @@
   background-color: #fafafa;
   border-radius: 15px;
   overflow: hidden;
-
+  opacity: 1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.subscrb-backprop.is-hidden .subscrb-modal {
+  transform: translate(-50%, -50%) scaleX(0);
+}
 .subscrb-img {
   position: relative;
   background-color: rgb(27, 14, 14);
