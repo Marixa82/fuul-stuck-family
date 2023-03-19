@@ -247,7 +247,7 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-
+  text-align: initial;
   color: var(--tex-color-black);
   margin-bottom: 24px;
   padding-left: 24px;
