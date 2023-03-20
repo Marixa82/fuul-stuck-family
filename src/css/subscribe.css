@@ -1,17 +1,17 @@
 @media screen and (min-width: 375px) {
-  .container {
+  .subscribe-container {
     width: 365px;
     margin: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .subscribe-container {
     width: 734px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .subscribe-container {
     width: 1166px;
   }
 }
@@ -293,7 +293,7 @@
 
 .subscrb-intup {
   margin-left: 24px;
-  width: 226px;
+  width: 263px;
   padding: 14px 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
@@ -315,7 +315,7 @@
   }
 
   .subscrb-intup {
-    width: 265px;
+    width: 313px;
     font-size: 18px;
     line-height: 1.21;
     padding: 15px 24px;
