@@ -5,6 +5,7 @@
 .container {
   display: block;
   width: 100%;
+  padding: 0 15px;
 }
 *,
 ::after,
@@ -67,7 +68,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .benefits-container {
     margin: 0 auto;
     max-width: 375px;
     height: 100%;
@@ -84,7 +85,7 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
+  .benefits-container {
     max-width: 768px;
   }
   .benefits {
@@ -112,7 +113,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .benefits-container {
     max-width: 1200px;
   }
   .benefits {
@@ -141,6 +142,7 @@
     content: '';
     width: 124px;
     height: 0;
+
     transform: rotate(90deg);
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: block;
