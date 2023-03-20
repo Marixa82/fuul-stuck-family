@@ -36,6 +36,7 @@
 
 .footer-cos-icon {
   stroke: white;
+  fill: transparent;
   border: none;
 }
 
@@ -97,8 +98,6 @@
   .container {
     width: 375px;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -106,8 +105,6 @@
   .container {
     width: 704px;
     margin: auto;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   .footer {
@@ -155,8 +152,6 @@
   .container {
     width: 1136px;
     margin: auto;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .footer-soc {
     margin-right: 32px;
