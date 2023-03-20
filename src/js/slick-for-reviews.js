@@ -8,9 +8,15 @@ $(document).ready(function () {
     autoplaySpeed: 800,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
         },
       },
       {
