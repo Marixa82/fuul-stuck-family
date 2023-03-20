@@ -1,6 +1,6 @@
 .footer {
   background-color: #1e1823;
-  padding-top: 32px;
+  /* padding-top: 32px; */
   padding-bottom: 32px;
 }
 
@@ -89,10 +89,15 @@
   padding-bottom: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+.footer-nav-link:is(:hover, :focus) {
+  color: var(--color-hover-orange);
+}
+
 
 .footer-nav-link:is(:hover, :focus) {
   color: var(--color-hover-orange);
 }
+
 
 @media screen and (min-width: 375px) {
   .container-footer {
@@ -108,7 +113,7 @@
   }
 
   .footer {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-bottom: 50px;
   }
 
@@ -150,8 +155,8 @@
 
 @media screen and (min-width: 1200px) {
   .container-footer {
-    width: 1136px;
-    margin: auto;
+    width: 1166px;
+ margin: auto;
   }
   .footer-soc {
     margin-right: 32px;
