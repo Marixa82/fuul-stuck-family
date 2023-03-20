@@ -57,9 +57,10 @@ img {
 }
 
 .reviews-cart-text {
+  width: 335px;
   padding-top: 56px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .reviews-customer-name {
@@ -113,6 +114,7 @@ img {
 .slick-track {
   gap: 28px;
 }
+
 
 .reviews-customers-list .slick-dots li.slick-active button {
   background-color: var(--color-hover-orange);
@@ -174,6 +176,13 @@ img {
     width: 344px;
   }
 
+  .reviews-cart-text {
+    width: 344px;
+    padding-top: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .slick-track {
     gap: 16px;
   }
@@ -196,6 +205,13 @@ img {
     width: 358px;
   }
 
+  .reviews-cart-text {
+    width: 360px;
+    padding-top: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .reviews-container {
     padding-bottom: 128px;
   }
@@ -205,8 +221,9 @@ img {
   }
 
   .slick-slide {
-    max-width: 360px;
+    width: 360px;
   }
+
 }
 
 /* ----модалка---- */
