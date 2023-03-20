@@ -119,7 +119,7 @@ color: var(--tex-color-black);
 outline: 1px solid black;
 background-color: rgba(255, 255, 255, 1);
 padding: 28px;
-    opacity: 1;
+    opacity: 0;
     
     max-width:  335px; 
     max-height: 270px;
