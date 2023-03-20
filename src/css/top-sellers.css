@@ -74,6 +74,7 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 734px;
+    padding: 0 15px;
   }
 
   .top-sellers-section {
@@ -114,6 +115,7 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1166px;
+    padding: 0 15px;
   }
 
   .top-sellers-section {
@@ -143,5 +145,317 @@
 
   .top-sellers-text {
     width: 407px;
+  }
+}
+/* ----модал--- */
+.buy-now-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: var(--transition-focus);
+  overflow-y: scroll;
+}
+.buy-now-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.buy-now-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px 0;
+  width: 311px;
+  border-radius: 15px;
+  background-color: #fafafa;
+}
+.buy-now-close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color var(--transition-focus);
+}
+.buy-now-close-button:hover,
+.buy-now-close-button:focus {
+  background-color: #fcf1e0;
+}
+.buy-now-close-button:hover .buy-now-close-icon,
+.buy-now-close-button:focus .buy-now-close-icon {
+  stroke: #fd9222;
+}
+.buy-now-close-icon {
+  width: 12px;
+  height: 12px;
+  stroke: #111;
+  transition: stroke var(--transition-focus);
+}
+.buy-now-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fd9222;
+}
+.buy-now-cont {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 32px 40px 14px;
+  width: 231px;
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.buy-now-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.buy-now-photo-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 16px auto 28px;
+  width: 96px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #111111;
+  background-color: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+/* <----------Form----------> */
+.buy-now-form {
+  padding: 0 24px;
+}
+.buy-now-formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  gap: 8px;
+}
+.buy-now-formField > .input::placeholder,
+.buy-now-formField > .buy-now-textarea::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.buy-now-formField .input:focus,
+.buy-now-formField .buy-now-textarea:focus {
+  border: 1.5px solid #fd9222;
+}
+.buy-now-formField .input.tel {
+  width: 100%;
+  padding-left: 106px;
+}
+.buy-now-tel-cont {
+  position: relative;
+  display: inline-block;
+}
+.buy-now-formField .tel-icon {
+  z-index: 1;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 18px;
+}
+.tel-icon-clue {
+  z-index: 1;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+}
+.tel-icon-clue-2 {
+  z-index: 1;
+  position: absolute;
+  left: 92px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 25px;
+  background-color: rgba(64, 64, 64, 0.1);
+}
+.buy-now-formField .input.card {
+  width: 100%;
+  padding-right: 46px;
+}
+.buy-now-formField .card-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 21px;
+  background-color: none;
+}
+.buy-now-formField .label-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.buy-now-name-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+textarea {
+  resize: none;
+  border: none;
+}
+.buy-now-textarea {
+  outline: none;
+}
+.buy-now-formField .input,
+.buy-now-formField .buy-now-textarea {
+  padding: 14px 0 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  background-color: #fafafa;
+  transition: border var(--transition-focus);
+}
+.buy-now-formField .textarea {
+  padding-top: 14px;
+  padding-left: 18px;
+}
+.form-button.button {
+  padding: 12px 28px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border: none;
+  transition: background-color var(--transition-focus);
+}
+.form-button.button:hover,
+.form-button.button:focus {
+  background-color: #fcf1e0;
+}
+.form-button:hover .button-text,
+.form-button:focus .button-text {
+  color: #fd9222;
+}
+.form-button .button-text {
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #ffffff;
+  transition: color var(--transition-focus);
+}
+/* <----------Form----------> */
+@media screen and (max-width: 375px) {
+  .buy-now-tabzah {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .buy-now-formField.persInf {
+    margin-top: 8px;
+  }
+  /* <----------swiper----------> */
+  .buy-now.swiper {
+    margin-bottom: 32px;
+  }
+  .swiper-pagination {
+    position: static;
+    color: #fd9222;
+  }
+  .buy-now-tabzah {
+    display: none;
+  }
+  /* <----------swiper----------> */
+}
+@media screen and (min-width: 768px) {
+  .buy-now-photo-button {
+    margin: 14px auto 18px;
+  }
+  .buy-now-close-button {
+    top: 31px;
+    right: 31px;
+  }
+  .buy-now-modal {
+    width: 609px;
+    padding: 48px 0;
+  }
+  .buy-now-form {
+    padding: 0 48px;
+  }
+  .buy-now-formField-persInf {
+    display: flex;
+    gap: 21px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+  }
+  .buy-now-formField.persInf {
+    margin-bottom: 0;
+    width: 246px;
+  }
+  .buy-now-formField.persInf-surname {
+    margin-bottom: 0;
+    width: 246px;
+  }
+  .buy-now-formField .label-name {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+  .buy-now-title {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  .buy-now-name-label {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+  .buy-now-cont {
+    display: block;
+    margin: 0;
+    padding: 24px 20px 18px;
+    width: 160px;
+  }
+  .buy-now-photo {
+    margin: 0;
+  }
+  .buy-now-photo-button {
+    margin: 14px auto 0;
+  }
+  .swiper-zah {
+    display: none;
+  }
+  .buy-now-tab {
+    margin: 32px 48.5px 40px;
+  }
+  .buy-now-list {
+    display: flex;
+    gap: 16px;
+  }
+  .form-button.button {
+    padding: 14px 40px;
   }
 }

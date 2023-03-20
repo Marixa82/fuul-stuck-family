@@ -16,11 +16,13 @@ body {
   color: var(--tex-color-black);
 }
 .container {
-  max-width: 1166px;
-  margin: 0 auto;
+  /* max-width: 1166px; */
+  /* margin: 0 auto; */
   outline: 2px solid green;
-  box-sizing: border-box;
-  padding: 0 15px;
+  /* box-sizing: border-box; */
+  /* padding: 0 15px; */
+  margin: 0 auto;
+  max-width: 276px;
 }
 /* h Приховані заголовки */
 .visually-hidden {
