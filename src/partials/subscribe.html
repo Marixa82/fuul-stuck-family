@@ -1,5 +1,5 @@
 <section class="subscribe-section">
-  <div class="container">
+  <div class="container subscribe-container">
     <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe-text">
       From the velvety texture to the rich and complex flavor, our New Chocolate
@@ -15,33 +15,44 @@
 
 <!-- Modal Subscribe -->
 
-<div class="subscrb-backprop">
+<div class="subscrb-backprop is-hidden" data-modal>
   <div class="subscrb-modal">
     <div class="subscrb-img">
-      <picture class="img-test">
+      <picture>
         <source
-          srcset="/src/img/explore-tablet.jpg"
+          srcset="
+            /img/img-subscribe/subscribe-modal-main1x.jpg 1x,
+            /img/img-subscribe/subscribe-modal-main2x.jpg 2x
+          "
           media="(min-width: 768px)"
         />
         <source
-          srcset="/src/img/explore-mobile.jpg"
+          srcset="
+            /img/img-subscribe/subscribe-modal-mob1x.jpg 1x,
+            /img/img-subscribe/subscribe-modal-mob2x.jpg 2x
+          "
           media="(max-width: 767px)"
         />
-        <img src="/src/img/explore-tablet.jpg" alt="chocolate" />
+        <img
+          src="/img/img-subscribe/subscribe-modal-main1x.jpg"
+          alt="chocolate"
+        />
       </picture>
-      <button type="button" class="subscrb-modal-close-btn">
-        <svg class="subscrb-close-icon" width="24" height="24">
-          <use href="./images/symbol-defs.svg#icon-sbcrb-close"></use>
+      <button type="button" class="subscrb-modal-close-btn" data-modal-close>
+        <svg class="subscrb-close-icon">
+          <use href="/img/icons.svg#icon-close-icon"></use>
         </svg>
       </button>
     </div>
+
     <h2 class="subscrb-modal-title">
       Explore our <br />
       <span class="subscrb-text-accent"> new chocolate </span> first!
     </h2>
-    <div class="subscrb-form-wrap">
-      <form class="subscrb-form">
-        <label for="user-email"></label>
+
+    <form class="subscrb-form">
+      <label for="user-email"></label>
+      <div class="subscrb-form-wrap">
         <input
           class="subscrb-intup"
           type="email"
@@ -50,8 +61,10 @@
           pattern="[a-zA-Z0-9]+"
           placeholder="Enter your email"
         />
-        <button type="submit" class="subscrb-submit-btn">Submit</button>
-      </form>
-    </div>
+        <button type="submit" class="subscrb-submit-btn" data-modal-close>
+          Submit
+        </button>
+      </div>
+    </form>
   </div>
 </div>

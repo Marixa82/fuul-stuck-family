@@ -1,4 +1,4 @@
-<section class="top-sellers-section">
+<section class="top-sellers-section" id="top-sellers">
   <div class="container top-sellers-container">
     <h2 class="top-sellers-title"><span>top </span>sellers</h2>
     <ul class="top-sellers-list">
@@ -6,28 +6,28 @@
         <picture>
           <source
             srcset="
-              ../img/img-top-sellers/sellers-deck1.jpg    1x,
-              ../img/img-top-sellers/sellers-deck1-2x.jpg 2x
+              /img/img-top-sellers/sellers-deck1.jpg    1x,
+              /img/img-top-sellers/sellers-deck1-2x.jpg 2x
             "
             media="(min-width: 1200px)"
           />
           <source
             srcset="
-              ../img/img-top-sellers/sellers-tablet1.jpg    1x,
-              ../img/img-top-sellers/sellers-tablet1-2x.jpg 2x
+              /img/img-top-sellers/sellers-tablet1.jpg    1x,
+              /img/img-top-sellers/sellers-tablet1-2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
           <source
             srcset="
-              ../img/img-top-sellers/sellers-mob1.jpg    1x,
-              ../img/img-top-sellers/sellers-mob1-2x.jpg 2x
+              /img/img-top-sellers/sellers-mob1.jpg    1x,
+              /img/img-top-sellers/sellers-mob1-2x.jpg 2x
             "
             media="(max-width: 767px)"
           />
           <img
             class="top-sellers-img"
-            src="./img/img-top-sellers/sellers-deck1.jpg"
+            src="/img/img-top-sellers/sellers-deck1.jpg"
             alt="Сhocolate with nuts"
           />
         </picture>
@@ -41,28 +41,28 @@
         <picture>
           <source
             srcset="
-              ../img/img-top-sellers/sellers-deck2.jpg,
-              ../img/img-top-sellers/sellers-deck2-2x.jpg 2x
+              /img/img-top-sellers/sellers-deck2.jpg,
+              /img/img-top-sellers/sellers-deck2-2x.jpg 2x
             "
             media="(min-width: 1200px)"
           />
           <source
             srcset="
-              ../img/img-top-sellers/sellers-tablet2.jpg    1x,
-              ../img/img-top-sellers/sellers-tablet2-2x.jpg 2x
+              /img/img-top-sellers/sellers-tablet2.jpg    1x,
+              /img/img-top-sellers/sellers-tablet2-2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
           <source
             srcset="
-              ../img/img-top-sellers/sellers-mob2.jpg    1x,
-              ../img/img-top-sellers/sellers-mob2-2x.jpg 2x
+              /img/img-top-sellers/sellers-mob2.jpg    1x,
+              /img/img-top-sellers/sellers-mob2-2x.jpg 2x
             "
             media="(max-width: 767px)"
           />
           <img
             class="top-sellers-img"
-            src="./img/img-top-sellers/sellers-deck2.jpg"
+            src="/img/img-top-sellers/sellers-deck2.jpg"
             alt="Milk chocolate"
           />
         </picture>
@@ -71,19 +71,201 @@
         <picture>
           <source
             srcset="
-              ../img/img-top-sellers/sellers-deck3.jpg,
-              ../img/img-top-sellers/sellers-deck3-2x.jpg 2x
+              /img/img-top-sellers/sellers-deck3.jpg,
+              /img/img-top-sellers/sellers-deck3-2x.jpg 2x
             "
             media="(min-width: 1200px)"
           />
           <img
             class="top-sellers-img"
-            src="./img/img-top-sellers/sellers-deck3.jpg"
+            src="/img/img-top-sellers/sellers-deck3.jpg"
             alt="Dark chocolate"
           />
         </picture>
       </li>
     </ul>
-    <button type="submit" class="top-sellers-btn">Buy now</button>
+    <button type="submit" data-modal-open2 class="top-sellers-btn">
+      Buy now
+    </button>
+  </div>
+  <div class="buy-now-backdrop is-hidden" data-modal2>
+    <div class="buy-now-modal">
+      <button type="button" class="buy-now-close-button">
+        <svg class="buy-now-close-icon" data-modal-close2>
+          <use href="./img/icons.svg#icon-close"></use>
+          <use href="./img/icons.svg#icon-close-1"></use>
+        </svg>
+      </button>
+      <h3 class="buy-now-title">buy now</h3>
+      <div class="buy-now swiper-zah">
+        <ul class="buy-now swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="buy-now-cont">
+              <img
+                src="/img/img-buyNow/chocolate.jpg"
+                srcset="
+                  /img/img-buyNow/chocolate.jpg    1x,
+                  /img/img-buyNow/chocolate-2x.jpg 2x
+                "
+                alt="chocolate"
+                width="167"
+                class="buy-now-photo"
+              />
+              <button type="button" class="buy-now-photo-button">100 g</button>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="buy-now-cont">
+              <img
+                src="/img/img-buyNow/chocolate-1.jpg"
+                srcset="
+                  /img/img-buyNow/chocolate-1.jpg,
+                  /img/img-buyNow/chocolate-1-2x.jpg 2x
+                "
+                alt="chocolate"
+                class="buy-now-photo"
+                width="167"
+              />
+              <button type="button" class="buy-now-photo-button">200 g</button>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="buy-now-cont">
+              <img
+                src="/img/img-buyNow/chocolate-2.jpg"
+                srcset="
+                  /img/img-buyNow/chocolate-2.jpg    1x,
+                  /img/img-buyNow/chocolate-2-2x.jpg 2x
+                "
+                alt="chocolate"
+                class="buy-now-photo"
+                width="167"
+              />
+              <button type="button" class="buy-now-photo-button">300 g</button>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="buy-now-tabzah">
+        <ul class="buy-now-list">
+          <li class="buy-now-cont">
+            <img
+              src="/img/img-buyNow/chocolate-tab.jpg"
+              srcset="
+                /img/img-buyNow/chocolate-tab.jpg    1x,
+                /img/img-buyNow/chocolate-tab-2x.jpg 2x
+              "
+              alt="chocolate"
+              width="120"
+              class="buy-now-photo"
+            />
+            <button type="button" class="buy-now-photo-button">100 g</button>
+          </li>
+          <li class="buy-now-cont">
+            <img
+              src="/img/img-buyNow/chocolate2-tab.jpg"
+              srcset="
+                /img/img-buyNow/chocolate2-tab.jpg,
+                /img/img-buyNow/chocolate2-tab-2x.jpg 2x
+              "
+              alt="chocolate"
+              class="buy-now-photo"
+              width="120"
+            />
+            <button type="button" class="buy-now-photo-button">200 g</button>
+          </li>
+          <li class="buy-now-cont">
+            <img
+              src="/img/img-buyNow/chocolate3-tab.jpg"
+              srcset="
+                /img/img-buyNow/chocolate3-tab.jpg    1x,
+                /img/img-buyNow/chocolate3-tab-2x.jpg 2x
+              "
+              alt="chocolate"
+              class="buy-now-photo"
+              width="120"
+            />
+            <button type="button" class="buy-now-photo-button">300 g</button>
+          </li>
+        </ul>
+      </div>
+      <form class="buy-now-form" autocomplete="off">
+        <label for="name" class="buy-now-name-label">
+          <span class="label-name persInf">Personal information</span>
+        </label>
+        <div class="buy-now-formField-persInf">
+          <div class="buy-now-formField persInf">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="name"
+              autofocus
+              placeholder="Name"
+            />
+          </div>
+          <label class="buy-now-formField persInf-surname">
+            <input
+              class="input"
+              type="text"
+              name="surname"
+              placeholder="Surname"
+            />
+          </label>
+        </div>
+        <label class="buy-now-formField">
+          <span class="label-name">Email</span>
+          <input
+            class="input"
+            type="text"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <label class="buy-now-formField">
+          <span class="label-name">Phone number</span>
+          <span class="buy-now-tel-cont">
+            <svg class="tel-icon">
+              <use href="./img/icons.svg#icon-ukraine-icon"></use>
+            </svg>
+            <span class="tel-icon-clue">+380</span>
+            <span class="tel-icon-clue-2"></span>
+            <input
+              class="input tel"
+              type="tel"
+              name="phone"
+              placeholder="Phone number"
+            />
+          </span>
+        </label>
+        <label class="buy-now-formField">
+          <span class="label-name">Card number</span>
+          <span class="buy-now-tel-cont">
+            <input
+              class="input card"
+              type="tel"
+              name="card"
+              maxlength="16"
+              placeholder="Enter card"
+            />
+            <svg class="card-icon">
+              <use href="./img/icons.svg#icon-mastercard-icon"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="buy-now-formField comment"
+          ><span class="label-name">Comment</span>
+          <textarea
+            name="textarea"
+            class="buy-now-textarea"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+        <button type="submit" class="form-button button" data-modal-open3>
+          <span class="button-text">Submit</span>
+        </button>
+      </form>
+    </div>
   </div>
 </section>
