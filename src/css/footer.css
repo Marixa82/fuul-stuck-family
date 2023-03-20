@@ -93,6 +93,12 @@
   color: var(--color-hover-orange);
 }
 
+
+.footer-nav-link:is(:hover, :focus) {
+  color: var(--color-hover-orange);
+}
+
+
 @media screen and (min-width: 375px) {
   .container-footer {
     width: 365px;
@@ -150,7 +156,7 @@
 @media screen and (min-width: 1200px) {
   .container-footer {
     width: 1166px;
-    margin: auto;
+ margin: auto;
   }
   .footer-soc {
     margin-right: 32px;
