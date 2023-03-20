@@ -46,6 +46,12 @@
   padding: 20px;
   height: 100%;
   overflow-y: auto;
+
+  transform: translateX(100%);
+}
+
+.header-burger-menu.is-open > .container {
+  transform: translateX(0);
 }
 
 .header-burger-menu {
