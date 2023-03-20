@@ -1,0 +1,159 @@
+.footer {
+  background-color: #1e1823;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: white;
+  width: 300px;
+
+  margin-bottom: 32px;
+}
+.footer-accent {
+  color: #fd9222;
+}
+
+.footer-contacts-wrap {
+  display: flex;
+}
+
+.footer-soc {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 17px;
+}
+
+.footer-cos-icon {
+  stroke: white;
+  fill: transparent;
+  border: none;
+}
+
+.footer-cos-icon:hover {
+  stroke: #fd9222;
+  border: none;
+}
+.footer-contacts-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #ffffff;
+
+  margin-bottom: 14px;
+}
+.footer-email-item,
+.footer-tel-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-tel-item {
+  margin-bottom: 4px;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  list-style: none;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.footer-nav-list {
+  padding-top: 32px;
+}
+
+.footer-wrap {
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 375px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+    margin: auto;
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-title {
+    padding-top: 0;
+    margin-bottom: 0;
+
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
+  .footer-contacts-wrap {
+    display: flex;
+    margin-left: auto;
+  }
+  .footer-contacts {
+    margin-right: 52px;
+  }
+
+  .footer-nav-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1136px;
+    margin: auto;
+  }
+  .footer-soc {
+    margin-right: 32px;
+  }
+}
