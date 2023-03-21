@@ -7,6 +7,9 @@ img {
 .reviews-container {
   text-align: center;
   padding-bottom: 72px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 2px solid green;
 }
 
 .reviews-title {
@@ -25,6 +28,7 @@ img {
 
 .reviews-customer {
   margin-bottom: 32px;
+  outline: 2px solid green;
 }
 
 .reviews-customers-list {
@@ -110,9 +114,7 @@ img {
   padding-top: 42px;
 }
 
-.slick-track {
-  gap: 28px;
-}
+
 
 .reviews-customers-list .slick-dots li.slick-active button {
   background-color: var(--color-hover-orange);
@@ -151,6 +153,13 @@ img {
 /* adaptive */
 
 @media screen and (min-width: 375px) {
+  
+  .reviews-container {
+    max-width: 375px;
+    padding-bottom: 72px;
+    padding: 0 20px;
+  }
+
   .reviews-item {
     width: 335px;
   }
@@ -161,6 +170,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
+  .reviews-container {
+    max-width: 768px;
+    padding-bottom: 72px;
+    padding: 0 32px;
+  }
+
   .reviews-title {
     font-size: 24px;
     line-height: 28px;
@@ -175,7 +191,7 @@ img {
   }
 
   .slick-track {
-    gap: 16px;
+    justify-content: space-between;
   }
 
   .slick-slide {
@@ -192,6 +208,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  
+  .reviews-container {
+    max-width: 1200px;
+    padding-bottom: 72px;
+    padding: 0 32px;
+  }
+
   .reviews-item {
     width: 358px;
   }
@@ -200,9 +223,7 @@ img {
     padding-bottom: 128px;
   }
 
-  .slick-track {
-    gap: 28px;
-  }
+
 
   .slick-slide {
     max-width: 360px;
