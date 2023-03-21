@@ -22,16 +22,15 @@
     background-image: url(../img/hero-img/hero-overlay3.jpg);
   }
 }
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    position: absolute;
-    min-width: 295px;
-    min-height: 205px;
-    padding: 395px 20px 20px 20px;
-
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  min-width: 295px;
+  min-height: 205px;
+  padding: 395px 20px 20px;
 }
 .hero-title{
     width: 299px;
@@ -101,18 +100,19 @@
   width: 107px;
   height: 28px;
 }
-.hero-scroll{
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: -0.03em;
-    gap: 12px;
-    transition: var(--transition-focus);
-    color: var(--tex-color-white);
+.hero-scroll {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  gap: 12px;
+  min-height: 28px;
+  transition: var(--transition-focus);
+  color: var(--tex-color-white);
 }
 .hero-scroll:hover,
 .hero-scroll:focus{
@@ -120,17 +120,25 @@
     
 }
 .hero-icon{
-    padding: 6px;
-    fill: var(--color-hover-orange);
-    background-color: var(--tex-color-white);
-    border-radius: 50%;
-    transition: var(--transition-focus);
+  padding: 6px;
+  fill: var(--color-hover-orange);
+  background-color: var(--tex-color-white);
+  border-radius: 50%;
+  transition: var(--transition-focus);
 }
 .hero-scroll:hover .hero-icon,
 .hero-scroll:focus .hero-icon {
     fill: var(--tex-color-white);
     background-color: var(--color-hover-orange);
 }
+.hero-section{
+    margin-bottom: 72px;
+  }
+.hero-content{
+  display: block;
+    height: 28px;
+    width: 107px;
+  }
 @media screen and (max-width: 767px) {
   .hero-container{
     min-height: 621px;
@@ -152,8 +160,7 @@
     display: block;
     min-width: 624px;
     min-height: 179px;
-    padding:671px 40px 40px;
-    
+    padding: 671px 40px 40px;
   }
   .hero-title{
     width: 484px;
@@ -162,8 +169,7 @@
   }
   .hero-btns{
     display: flex;
-    width: 624px;
-    height: 45px;
+    min-height: 45px;
     padding-top: 32px;
   }
   .hero-list{
@@ -194,6 +200,9 @@
     height: 26px;
     width: 26px;
   }
+  .hero-section{
+    margin-bottom: 52px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -208,13 +217,9 @@
     background-position: 70% 35%;
     background-size: 120%;
   }
-  .hero{
+  .hero {
     min-width: 1056px;
     padding: 381px 40px 40px;
-  }
-  .hero-btns{
-    width: 1052px;
-    height: 45px;
   }
   .hero-list{
     flex-wrap: nowrap;
