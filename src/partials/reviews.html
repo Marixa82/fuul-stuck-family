@@ -110,13 +110,17 @@
       </li>
     </ul>
   </div>
-  <button type="button" class="reviews-button" data-modal-open1>
+  <button type="button" class="reviews-button js-open-modal" data-modal="1">
     Leave a review
   </button>
 
-  <div class="backdrop-main is-hidden" data-modal1>
+  <div class="modal" data-modal="1">
     <div class="modal-main">
-      <button class="modal-close-main" type="button" data-modal-close1>
+      <button
+        class="js-modal-close modal-close-main"
+        type="button"
+        data-modal="1"
+      >
         <svg class="modal-close-icon-main" width="28" height="28">
           <use href="./img/icons.svg#icon-close-icon"></use>
         </svg>
@@ -176,7 +180,11 @@
             </label>
           </div>
           <div class="btn-modal-main">
-            <button class="button-main" data-modal-open4 type="submit">
+            <button
+              class="button-main js-open-modal"
+              data-modal="2"
+              type="submit"
+            >
               Send
             </button>
           </div>
@@ -184,12 +192,12 @@
       </div>
     </div>
 
-    <div class="modal-thankyou-review is-hidden" data-modal4>
+    <div class="modal modal-thankyou-review" data-modal="2">
       <div class="modal-thankyou-review">
         <button
           type="button"
-          class="modal-thankyou-btn-review"
-          data-modal-close4
+          data-modal="2"
+          class="js-modal-close modal-thankyou-btn-review"
         >
           <svg class="modal-thankyou-review-icon" width="22" height="22">
             <use href="./img/icons.svg#icon-close-icon"></use>
