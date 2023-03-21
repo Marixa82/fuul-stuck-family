@@ -12,7 +12,7 @@
 }
 .unique-components-item {
     position: relative;
-    width: 335px;
+    max-width: 335px;
     height: 270px;
      background: var(--color-hover-orange);
      border-radius: 15px;
@@ -248,5 +248,20 @@ text-overflow: ellipsis;
         margin-left: 28px;
         margin-bottom: 36px; 
     }
+
+    /* .unique-components-overlay-benefits-second-fix {
+
+     }  */
+    /* .unique-components-overlay-benefits-first-fix {
+        max-width: 114px;
+        max-height: 24px;
+    }
+    .unique-components-overlay-benefits-first-fix p {
+        max-width: 82px;
+        max-height: 12px;
+    }
     
+    .unique-components-overlay-benefits-second-fix p {
+        max-width: 61px;
+    } */
 }
