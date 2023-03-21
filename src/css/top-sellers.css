@@ -157,7 +157,9 @@
   background-color: rgba(46, 47, 66, 0.4);
   transition: var(--transition-focus);
   overflow-y: scroll;
+  opacity: 1;
 }
+
 .buy-now-backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -171,6 +173,7 @@
   width: 311px;
   border-radius: 15px;
   background-color: #fafafa;
+  text-align: left;
 }
 .buy-now-close-button {
   position: absolute;
@@ -261,6 +264,9 @@
 .buy-now-formField .input:focus,
 .buy-now-formField .buy-now-textarea:focus {
   border: 1.5px solid #fd9222;
+}
+.buy-now-textarea {
+  max-height: 137px;
 }
 .buy-now-formField .input.tel {
   width: 100%;
@@ -421,6 +427,13 @@ textarea {
 
   max-width: 229px;
 }
+.form-thankyouu {
+  max-width: 309px;
+  margin-left: 163px;
+  margin-top: 154px;
+  padding: 0;
+  text-align: left;
+}
 .thankyou-title-review {
   font-style: normal;
   font-weight: 600;
@@ -546,7 +559,7 @@ textarea {
     display: block;
     margin: 0;
     padding: 24px 20px 18px;
-    width: 160px;
+    max-width: 160px;
   }
   .buy-now-photo {
     margin: 0;
@@ -563,8 +576,58 @@ textarea {
   .buy-now-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
   }
   .form-button.button {
     padding: 14px 40px;
   }
+}
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* padding: 0; */
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

@@ -7,7 +7,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscribe-btn" data-modal-open>
+    <button type="button" class="js-open-modal subscribe-btn" data-modal="3">
       Subscribe
     </button>
   </div>
@@ -15,7 +15,7 @@
 
 <!-- Modal Subscribe -->
 
-<div class="subscrb-backprop is-hidden" data-modal>
+<div class="modal" data-modal="3">
   <div class="subscrb-modal">
     <div class="subscrb-img">
       <picture>
@@ -38,7 +38,11 @@
           alt="chocolate"
         />
       </picture>
-      <button type="button" class="subscrb-modal-close-btn" data-modal-close>
+      <button
+        type="button"
+        class="js-modal-close subscrb-modal-close-btn"
+        data-modal="3"
+      >
         <svg class="subscrb-close-icon">
           <use href="/img/icons.svg#icon-close-icon"></use>
         </svg>
