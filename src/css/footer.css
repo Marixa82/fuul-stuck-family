@@ -92,6 +92,12 @@
 .footer-nav-link:is(:hover, :focus) {
   color: var(--color-hover-orange);
 }
+.footer-email-item:is(:hover, :focus) {
+  color: var(--color-hover-orange);
+}
+.footer-tel-item:is(:hover, :focus) {
+  color: var(--color-hover-orange);
+}
 
 @media screen and (min-width: 375px) {
   .container-footer {
@@ -151,8 +157,5 @@
   .container-footer {
     width: 1166px;
     margin: auto;
-  }
-  .footer-soc {
-    margin-right: 32px;
   }
 }
