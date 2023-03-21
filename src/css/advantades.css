@@ -96,7 +96,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     padding: 50px 17px;
     gap: 32px;
   }
