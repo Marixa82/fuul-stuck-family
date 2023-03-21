@@ -1,1 +1,163 @@
+.made {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+ul {
+  list-style: disc;
+}
 
+.made-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.made-title-made {
+  color: #fd9222;
+}
+
+.made-list-text {
+  max-width: 307px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.made-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #111111;
+  list-style: disc;
+}
+
+.made-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.how-its-made {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 14px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.made-list {
+  max-width: 307px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.made-video {
+  width: 100%;
+  margin-bottom: 20px;
+ 
+}
+
+.video-ytb {
+  display: block;
+  border-radius: 15px;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-ytb {
+    width: 335px;
+    height: 500px;
+  }
+
+  .made-list-text {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 614px;
+  }
+
+  .made-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .video-ytb {
+    width: 614px;
+    height: 400px;
+  }
+
+  .how-its-made {
+    max-width: 614px;
+    padding: 32px 32px;
+  }
+
+  .made-list-text {
+    max-width: 350px;
+    margin: 0 0 28px 0;
+  }
+
+  .made-list {
+    max-width: 550px;
+    margin: 0;
+  }
+
+  .made-item {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
+
+  .made-container {
+    display: flex;
+  }
+
+  .made-video {
+    width: 600px;
+  }
+
+  .how-its-made {
+    max-width: 516px;
+    padding: 32px 31px 94px 31px;
+    margin-left: 20px;
+  }
+
+  .video-ytb {
+    width: 600px;
+    height: 400px;
+  }
+
+  .made-item {
+    max-width: 446px;
+  }
+
+  .milk-none {
+    display: none;
+  }
+}
