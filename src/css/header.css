@@ -1,5 +1,5 @@
 /* -------------H E A D E R---L O G O ------------------  */
-.header-container {
+.header-page > .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,20 +54,20 @@
 
 .header-burger-menu {
   position: fixed;
-  z-index: 999;
+  z-index: 1100;
   top: 0;
   right: 0;
   width: 60%;
   height: 100%;
   background-color: #1e1823;
 
-  transform: translateX(100%);
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  transition: transform 250ms ease-in-out;
+  transform: translateX(100%);
+  transition-timing-function: ease-in;
+  transition: 250ms;
 }
 
 .header-burger-menu.is-open {
@@ -75,8 +75,9 @@
   visibility: visible;
   pointer-events: auto;
 
+  transition-timing-function: ease-in-out;
   transform: translateX(0);
-  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  transition: 250ms;
 }
 
 .header-menu-btn {
@@ -140,24 +141,25 @@
   color: var(--tex-color-white);
 }
 
-.mob-burger-link {
-  position: relative;
-  display: block;
-}
-.mob-burger-link.current:is(:hover, :focus) {
-  color: var(--color-hover-orange);
-}
+@media screen and (max-width: 767px) {
+  .mob-burger-link {
+    position: relative;
+  }
+  .mob-burger-link.current:is(:hover, :focus) {
+    color: var(--color-hover-orange);
+  }
 
-.mob-burger-link.current:hover::after {
-  position: absolute;
-  display: inline-block;
-  content: '';
-  height: 0;
-  width: 24px;
-  left: 50px;
-  bottom: -8px;
+  .mob-burger-link.current:hover:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    height: 0;
+    width: 50%;
+    left: 0;
+    bottom: -8px;
 
-  border: 1px solid #fd9222;
+    border: 1px solid #fd9222;
+  }
 }
 
 .mob-burger-socials {
@@ -191,7 +193,7 @@
   .container {
     max-width: 734px;
   }
-  .header-container {
+  .header-page > .header-container {
     padding-top: 20px;
     padding-bottom: 14px;
   }
@@ -241,7 +243,7 @@
     line-height: 1.111;
   }
 
-  .header-container {
+  .header-page > .header-container {
     display: flex;
     padding-top: 24px;
     padding-bottom: 32px;
