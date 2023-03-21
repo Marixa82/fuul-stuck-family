@@ -68,14 +68,14 @@ ul {
 .made-video {
   width: 100%;
   margin-bottom: 20px;
- 
 }
 
 .video-ytb {
   display: block;
   border-radius: 15px;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 375px) {

@@ -360,7 +360,7 @@
 
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -371,7 +371,7 @@
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  /* text-align: center; */
   /* padding: 30px; */
   border-radius: 3px;
   background-color: #fff;

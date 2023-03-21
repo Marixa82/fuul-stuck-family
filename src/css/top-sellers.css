@@ -170,10 +170,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 32px 0;
-  width: 311px;
   border-radius: 15px;
   background-color: #fafafa;
   text-align: left;
+  max-width: 609px;
+  width: 100%;
 }
 .buy-now-close-button {
   position: absolute;
@@ -213,6 +214,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fd9222;
+  margin-bottom: 32px;
 }
 .buy-now-cont {
   display: flex;
@@ -266,7 +268,7 @@
   border: 1.5px solid #fd9222;
 }
 .buy-now-textarea {
-  max-height: 137px;
+  height: 137px;
 }
 .buy-now-formField .input.tel {
   width: 100%;
@@ -339,6 +341,7 @@ textarea {
 }
 .buy-now-textarea {
   outline: none;
+  height: 137px;
 }
 .buy-now-formField .input,
 .buy-now-formField .buy-now-textarea {
@@ -374,6 +377,9 @@ textarea {
   line-height: calc(17 / 14);
   color: #ffffff;
   transition: color var(--transition-focus);
+}
+.modal-thankyouu {
+  max-width: 516px;
 }
 
 /* ------модал бай нав---- */
@@ -523,8 +529,9 @@ textarea {
     right: 31px;
   }
   .buy-now-modal {
-    width: 609px;
+    max-width: 609px;
     padding: 48px 0;
+    width: 100%;
   }
   .buy-now-form {
     padding: 0 48px;
@@ -577,6 +584,7 @@ textarea {
     display: flex;
     gap: 16px;
     justify-content: center;
+    margin-bottom: 40px;
   }
   .form-button.button {
     padding: 14px 40px;
@@ -606,10 +614,10 @@ textarea {
 
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 500px;
+  max-width: 609px;
 
   /*  Центрируем и задаем z-index */
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -617,7 +625,7 @@ textarea {
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  /* text-align: center; */
   /* padding: 0; */
   border-radius: 3px;
   background-color: #fff;

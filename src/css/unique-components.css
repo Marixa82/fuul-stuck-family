@@ -4,7 +4,7 @@
 .container-unique-components {
   max-width: 1166px;
   margin: 0 auto;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   box-sizing: border-box;
   padding: 0 15px;
   padding-bottom: 67px;
@@ -12,7 +12,7 @@
 }
 .unique-components-item {
   position: relative;
-  width: 335px;
+  max-width: 335px;
   height: 270px;
   background: var(--color-hover-orange);
   border-radius: 15px;
