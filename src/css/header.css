@@ -98,6 +98,9 @@
 .burger-svg {
   stroke: #111111;
 }
+.animation {
+  position: relative;
+}
 
 .burger-menu-close {
   width: 28px;
@@ -112,6 +115,7 @@
 
   transition: var(--transition-focus);
 }
+
 .burger-menu-close:is(:hover, :focus) {
   stroke: var(--color-hover-orange);
   transition: var(--transition-focus);
@@ -194,8 +198,8 @@
     max-width: 734px;
   }
   .header-page > .header-container {
-    padding-top: 20px;
-    padding-bottom: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   .header-menu-btn {
     height: 32px;
@@ -245,7 +249,6 @@
 
   .header-page > .header-container {
     display: flex;
-    padding-top: 24px;
     padding-bottom: 32px;
   }
 
