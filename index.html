@@ -23,8 +23,8 @@
 
     
     <title>full-stack-family</title>
-    <script type="module" crossorigin src="/full-stack-family/assets/index-28eba4cb.js"></script>
-    <link rel="stylesheet" href="/full-stack-family/assets/index-997b597b.css">
+    <script type="module" crossorigin src="/full-stack-family/assets/index-9db61276.js"></script>
+    <link rel="stylesheet" href="/full-stack-family/assets/index-85f28533.css">
   </head>
 
   <body>
@@ -752,14 +752,15 @@
         </picture>
       </li>
     </ul>
-    <button type="submit" data-modal-open2 class="top-sellers-btn">
+    <button type="submit" data-modal="4" class="js-open-modal top-sellers-btn">
       Buy now
     </button>
   </div>
-  <div class="buy-now-backdrop is-hidden" data-modal2>
+
+  <div class="modal" data-modal="4">
     <div class="buy-now-modal">
-      <button type="button" class="buy-now-close-button">
-        <svg class="buy-now-close-icon" data-modal-close2>
+      <button type="button" class="js-modal-close buy-now-close-button">
+        <svg class="buy-now-close-icon" data-modal="4">
           <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close"></use>
           <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close-1"></use>
         </svg>
@@ -840,6 +841,7 @@
           </li>
         </ul>
       </div>
+
       <form class="buy-now-form" autocomplete="off">
         <label for="name" class="buy-now-name-label">
           <span class="label-name persInf">Personal information</span>
@@ -912,21 +914,29 @@
             placeholder="Enter text"
           ></textarea>
         </label>
-        <button type="submit" class="form-button button" data-modal-open3>
+        <button
+          type="submit"
+          class="js-open-modal form-button button"
+          data-modal="5"
+        >
           <span class="button-text">Submit</span>
         </button>
       </form>
     </div>
 
-    <div class="modal-thankyou-buynow is-hidden" data-modal3>
+    <div class="modal" data-modal="5">
       <div class="modal-thankyou">
-        <button type="button" class="modal-thankyou-btn" data-modal-close3>
+        <button
+          type="button"
+          class="js-modal-close modal-thankyou-btn"
+          data-modal="5"
+        >
           <svg class="modal-thankyou-icon" width="22" height="22">
             <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close-icon"></use>
           </svg>
         </button>
         <form class="form-modal-thankyou">
-          <div class="form-thankyou">
+          <div class="form-thankyouu">
             <h3 class="modal-thankyou-title">THANK YOU!</h3>
             <p class="modal-thankyou-text">
               We are glad that you ordered our chocolate and we are giving you a
@@ -1062,13 +1072,17 @@
       </li>
     </ul>
   </div>
-  <button type="button" class="reviews-button" data-modal-open1>
+  <button type="button" class="reviews-button js-open-modal" data-modal="1">
     Leave a review
   </button>
 
-  <div class="backdrop-main is-hidden" data-modal1>
+  <div class="modal" data-modal="1">
     <div class="modal-main">
-      <button class="modal-close-main" type="button" data-modal-close1>
+      <button
+        class="js-modal-close modal-close-main"
+        type="button"
+        data-modal="1"
+      >
         <svg class="modal-close-icon-main" width="28" height="28">
           <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close-icon"></use>
         </svg>
@@ -1128,7 +1142,11 @@
             </label>
           </div>
           <div class="btn-modal-main">
-            <button class="button-main" data-modal-open4 type="submit">
+            <button
+              class="button-main js-open-modal"
+              data-modal="2"
+              type="submit"
+            >
               Send
             </button>
           </div>
@@ -1136,12 +1154,12 @@
       </div>
     </div>
 
-    <div class="modal-thankyou-review is-hidden" data-modal4>
+    <div class="modal modal-thankyou-review" data-modal="2">
       <div class="modal-thankyou-review">
         <button
           type="button"
-          class="modal-thankyou-btn-review"
-          data-modal-close4
+          data-modal="2"
+          class="js-modal-close modal-thankyou-btn-review"
         >
           <svg class="modal-thankyou-review-icon" width="22" height="22">
             <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close-icon"></use>
@@ -1188,7 +1206,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscribe-btn" data-modal-open>
+    <button type="button" class="js-open-modal subscribe-btn" data-modal="3">
       Subscribe
     </button>
   </div>
@@ -1196,7 +1214,7 @@
 
 <!-- Modal Subscribe -->
 
-<div class="subscrb-backprop is-hidden" data-modal>
+<div class="modal" data-modal="3">
   <div class="subscrb-modal">
     <div class="subscrb-img">
       <picture>
@@ -1213,7 +1231,11 @@
           alt="chocolate"
         />
       </picture>
-      <button type="button" class="subscrb-modal-close-btn" data-modal-close>
+      <button
+        type="button"
+        class="js-modal-close subscrb-modal-close-btn"
+        data-modal="3"
+      >
         <svg class="subscrb-close-icon">
           <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close-icon"></use>
         </svg>
@@ -1309,7 +1331,12 @@
   </div>
 </footer>
 
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script
       type="text/javascript"
