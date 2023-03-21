@@ -372,6 +372,14 @@ textarea {
 
 /* ------модал бай нав---- */
 /* ------------ */
+.modal-thankyou-buynow {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  position: fixed;
+}
 .modal-thankyou-review {
   position: relative;
   max-width: 311px;
