@@ -2,7 +2,7 @@
   background: #1e1823;
   margin-bottom: 72px;
 }
-.container {
+.benefits-container {
   display: block;
   width: 100%;
   padding: 0 15px;
@@ -100,9 +100,9 @@
     padding: 50px 17px;
     gap: 32px;
   }
-  .benefits-container {
+  /* .benefits-container {
     flex-basis: calc((100% - 32px) / 2);
-  }
+  } */
   .benefits-item:not(:last-child) {
     max-width: 336px;
   }
