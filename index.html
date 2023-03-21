@@ -24,11 +24,11 @@
     
     <title>full-stack-family</title>
     <script type="module" crossorigin src="/full-stack-family/assets/index-9db61276.js"></script>
-    <link rel="stylesheet" href="/full-stack-family/assets/index-e7d3a54a.css">
+    <link rel="stylesheet" href="/full-stack-family/assets/index-a09709b2.css">
   </head>
 
   <body>
-    <header class="header-page">
+    <header is="header" class="header-page">
   <div class="container header-container">
     <nav class="header-navigation">
       <a href="./index.html" class="header-logo link"
@@ -43,16 +43,22 @@
           <a href="./index.html" class="header-navigation-link">Home</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">How it’s made?</a>
+          <a href="#how it’s made" class="header-navigation-link"
+            >How it’s made?</a
+          >
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">Our products</a>
+          <a href="#Our products" class="header-navigation-link"
+            >Our products</a
+          >
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">Top sellers</a>
+          <a href="#top-sellers" class="header-navigation-link">Top sellers</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">Chocolate is loved</a>
+          <a href="#chocolate-is-loved" class="header-navigation-link"
+            >Chocolate is loved</a
+          >
         </li>
       </ul>
     </nav>
@@ -79,7 +85,7 @@
       aria-expanded="false"
       aria-controls="menu-container"
     >
-      <svg width="14" height="21" class="burger-svg">
+      <svg width="28" height="28" class="burger-svg">
         <use href="/full-stack-family/assets/icons-73552e29.svg#icon-burger-menu"></use>
       </svg>
     </button>
@@ -94,7 +100,7 @@
           aria-controls="menu-container"
           data-menu-button
         >
-          <svg width="12" height="12" class="close-menu-icon">
+          <svg width="28" height="28" class="close-menu-icon">
             <use href="/full-stack-family/assets/icons-73552e29.svg#icon-close-icon"></use>
           </svg>
         </button>
@@ -368,7 +374,7 @@
   </ul>
 </section>
 
-      <section class="made">
+      <section class="made" id="how it’s made">
   <div class="container">
     <h2 class="made-title">
       HOW IT'S <span class="made-title-made">MADE?</span>
@@ -414,7 +420,7 @@
   </div>
 </section>
 
-      <section class="products">
+      <section class="products" id="Our products">
   <div class="products-container container">
     <h2 class="products-our">Our <span class="title-color">PRODUCTS</span></h2>
     <div class="swiper">
@@ -924,7 +930,7 @@
       </form>
     </div>
 
-    <div class="modal" data-modal="5">
+    <div class="modal modal-thankyou" data-modal="5">
       <div class="modal-thankyou">
         <button
           type="button"
@@ -960,7 +966,7 @@
   </div>
 </section>
 
-      <section class="reviews-container container">
+      <section id="chocolate-is-loved" class="reviews-container container">
   <h2 class="reviews-title">
     <span class="reviews-title-span">chocolate</span> is loved
   </h2>
@@ -1076,7 +1082,7 @@
     Leave a review
   </button>
 
-  <div class="modal" data-modal="1">
+  <div class="modal modal-main" data-modal="1">
     <div class="modal-main">
       <button
         class="js-modal-close modal-close-main"
@@ -1143,7 +1149,7 @@
           </div>
           <div class="btn-modal-main">
             <button
-              class="button-main js-open-modal"
+              class="button-main js-open-modal js-open-close"
               data-modal="2"
               type="submit"
             >
@@ -1267,7 +1273,7 @@
 </div>
 
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
   <div class="container container-footer">
     <div class="footer-wrap">
       <h2 class="footer-title">
@@ -1312,19 +1318,19 @@
     <div class="footer-nav">
       <ul class="footer-nav-list list">
         <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Home</a>
+          <a class="footer-nav-link" href="#" header>Home</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">How it's made?</a>
+          <a class="footer-nav-link" href="#how it’s made">How it's made?</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Our products</a>
+          <a class="footer-nav-link" href="#Our products">Our products</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Top sellers</a>
+          <a class="footer-nav-link" href="#top-sellers">Top sellers</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Home</a>
+          <a class="footer-nav-link" href="#header">Home</a>
         </li>
       </ul>
     </div>
