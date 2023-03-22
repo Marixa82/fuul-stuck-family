@@ -168,6 +168,7 @@
 
 .mob-burger-socials {
   display: flex;
+  align-items: center;
 }
 
 .burger-soc-item:not(:last-child) {
