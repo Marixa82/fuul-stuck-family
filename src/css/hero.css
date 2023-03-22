@@ -35,7 +35,7 @@
   position: absolute;
   min-width: 295px;
   min-height: 205px;
-  padding: 395px 20px 20px;
+  padding: 395px 20px 20px 15px;
 }
 .hero-title{
     width: 299px;
@@ -123,7 +123,13 @@
 .hero-scroll:focus {
   color: var(--color-hover-orange);
 }
+<<<<<<< Updated upstream
 .hero-icon{
+=======
+.hero-icon {
+  height: 28px;
+  width: 28px;
+>>>>>>> Stashed changes
   padding: 6px;
   fill: var(--color-hover-orange);
   background-color: var(--tex-color-white);
@@ -135,6 +141,7 @@
   fill: var(--tex-color-white);
   background-color: var(--color-hover-orange);
 }
+<<<<<<< Updated upstream
 .hero-section{
     margin-bottom: 72px;
   }
@@ -147,6 +154,23 @@
     .hero-how{
       width: 120px;
     }
+=======
+.hero-section {
+  margin-bottom: 72px;
+}
+.hero-content {
+  display: block;
+  height: 28px;
+  width: 107px;
+}
+@media screen and (max-width: 375px) {
+  .hero{
+    max-width: 295px;
+    padding-left: 5px;
+  }
+  .hero-how {
+    width: 120px;
+>>>>>>> Stashed changes
   }
 @media screen and (max-width: 767px) {
   .hero-container {
@@ -203,8 +227,8 @@
     height: 38px;
   }
   .hero-icon {
-    height: 26px;
-    width: 26px;
+    height: 38px;
+    width: 38px;
   }
   .hero-section{
     margin-bottom: 52px;
