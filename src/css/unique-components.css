@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .container {
     padding: 0;
 }
@@ -41,14 +42,67 @@
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+=======
+/* .container {
+  padding: 0;
+} */
+/* .section-unique-components {
+  padding-bottom: 67px;
+} */
+.container-unique-components {
+  /* max-width: 1166px;
+  margin: 0 auto;
+  /* outline: 2px solid green; 
+  box-sizing: border-box; */
+  padding: 0 15px;
+  
+ padding: 0;
+}
+.unique-components-item {
+  position: relative;
+  max-width: 335px;
+  height: 270px;
+   background: var(--color-hover-orange);
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+.unique-components-item img {
+  margin-top: 28px;
+  margin-right: 55px;
+  margin-left: 56px;
+  margin-bottom:25px;  
+}
+
+.unique-components-title {
+  max-width: 283px;
+ 
+  color: var(--tex-color-black);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  /* or 117% */
+
+  margin-bottom: 24px;
+   margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+>>>>>>> Stashed changes
 }
 
 .unique-components-title span {
     color: var(--color-hover-orange);
 }
 .unique-components-title-text {
+<<<<<<< Updated upstream
     max-width: 335px;
     color: var(--tex-color-black);
+=======
+  max-width: 335px;
+  color: var(--tex-color-black);
+>>>>>>> Stashed changes
 font-weight: 400;
 font-size: 14px;
 line-height: 1.29;
@@ -79,10 +133,17 @@ letter-spacing: -0.02em;
     background: var(--color-hover-dark);
 }
 .unique-components-img-text {
+<<<<<<< Updated upstream
     text-align: left;
     margin-bottom: 25px;
     margin-left: 28px;
     font-weight: 600;
+=======
+  text-align: left;
+  margin-bottom: 25px;
+  margin-left: 28px;
+  font-weight: 600;
+>>>>>>> Stashed changes
 font-size: 14px;
 line-height: 1.29;
 /* identical to box height, or 129% */
@@ -92,10 +153,17 @@ text-transform: uppercase;
 color: var(--tex-color-white);
 }
 .unique-components-img-text-white {
+<<<<<<< Updated upstream
     text-align: left;
     margin-bottom: 28px;
     margin-left: 28px;
     font-weight: 600;
+=======
+  text-align: left;
+  margin-bottom: 28px;
+  margin-left: 28px;
+  font-weight: 600;
+>>>>>>> Stashed changes
 font-size: 14px;
 line-height: 1.29;
 /* identical to box height, or 129% */
@@ -113,6 +181,7 @@ color: var(--tex-color-black);
 
 
 .unique-components-overlay-block {
+<<<<<<< Updated upstream
   position: absolute;
   top: 0;
   right: 0;
@@ -127,6 +196,22 @@ padding: 28px;
     overflow: hidden;
   text-overflow: ellipsis;
   transition: opacity var(--transition-focus);
+=======
+position: absolute;
+top: 0;
+right: 0;
+outline: 1px solid black;
+background-color: rgba(255, 255, 255, 1);
+padding: 28px;
+  opacity: 0;
+  
+  max-width:  335px; 
+  max-height: 270px;
+  border-radius: 15px;
+  overflow: hidden;
+text-overflow: ellipsis;
+transition: opacity var(--transition-focus);
+>>>>>>> Stashed changes
 }
 .unique-components-item:hover .unique-components-overlay-block {
     opacity: 1;
@@ -134,7 +219,11 @@ padding: 28px;
 
 
 .unique-components-overlay-title {
+<<<<<<< Updated upstream
     font-weight: 600;
+=======
+  font-weight: 600;
+>>>>>>> Stashed changes
 font-size: 18px;
 line-height: 1.22;
 /* identical to box height */
@@ -149,8 +238,13 @@ color: var(--tex-color-black);
     gap: 6px;
 }
 .unique-components-overlay-benefits-first {
+<<<<<<< Updated upstream
     
     font-weight: 400;
+=======
+  
+  font-weight: 400;
+>>>>>>> Stashed changes
 font-size: 10px;
 line-height: 1.2;
 /* identical to box height, or 120% */
@@ -158,19 +252,29 @@ display: flex;
 align-items: center;
 
 color: var(--tex-color-white);
+<<<<<<< Updated upstream
     background: var(--color-hover-orange);
+=======
+  background: var(--color-hover-orange);
+>>>>>>> Stashed changes
 border-radius: 35px;
 padding: 6px 16px;
 }
 .unique-components-overlay-benefits-second {
+<<<<<<< Updated upstream
     
     font-weight: 400;
+=======
+  
+  font-weight: 400;
+>>>>>>> Stashed changes
 font-size: 10px;
 line-height: 1.2;
 /* identical to box height, or 120% */
 display: flex;
 align-items: center;
 color: var(--tex-color-black);
+<<<<<<< Updated upstream
      border: 1px solid var(--color-hover-orange);
     border-radius: 35px;
 padding: 6px 16px;
@@ -178,6 +282,15 @@ padding: 6px 16px;
 .unique-components-overlay-text {
     max-height: 146px;
     font-weight: 400;
+=======
+   border: 1px solid var(--color-hover-orange);
+  border-radius: 35px;
+padding: 6px 16px;
+}
+.unique-components-overlay-text {
+  max-height: 146px;
+  font-weight: 400;
+>>>>>>> Stashed changes
 font-size: 14px;
 line-height: 1.29;
 /* or 129% */
@@ -190,6 +303,7 @@ text-overflow: ellipsis;
 }
 @media screen and (min-width: 375px) { 
 
+<<<<<<< Updated upstream
     .unique-components-list {
         flex-direction: column;
     }
@@ -264,4 +378,71 @@ text-overflow: ellipsis;
     .unique-components-overlay-benefits-second-fix p {
         max-width: 61px;
     } */
+=======
+  .unique-components-list {
+      flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) { 
+  /* .section-unique-components {
+    padding-bottom: 100px;
+  } */
+  .container.container-unique-components  {
+      padding: 0;
+      
+      /* padding: 0; */
+  }
+  /* .container-unique-components {
+      padding-bottom: 100px;
+      padding: 0;
+  } */
+  .unique-components-title {
+      font-size: 24px;
+      line-height: 1.17;
+      /* or 117% */
+  }
+  
+  .unique-components-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 32px;
+  }
+  .unique-components-title{
+      max-width: 411px;
+      margin-bottom: 28px;
+  }
+  .unique-components-title-text{
+      max-width: 486px;
+      
+  }
+}
+@media screen and (min-width: 1200px) { 
+  /* .section-unique-components {
+    padding-bottom: 128px;
+  } */
+  /* .container-unique-components {
+      
+  } */
+  
+  .unique-components-list {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 19px;
+  }
+  .unique-components-item {
+      width: 270px;
+      height: 270px;
+  }
+  .unique-components-item img {
+      width: 206px;
+      height: 160px;
+
+      margin-top: 26px;
+      margin-right: 36px;
+      margin-left: 28px;
+      margin-bottom: 36px; 
+  }
+  
+>>>>>>> Stashed changes
 }
