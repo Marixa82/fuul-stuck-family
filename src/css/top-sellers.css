@@ -159,7 +159,7 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: var(--transition-focus);
-  overflow-y: scroll;
+  overflow: scroll;
   opacity: 1;
 }
 
@@ -170,17 +170,14 @@
 .buy-now-modal {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  transform: translate(-50%, 0);
   padding: 32px 0;
   border-radius: 15px;
   background-color: #fafafa;
   text-align: left;
   max-width: 609px;
   width: 100%;
-}
-.buy-now-modal::-webkit-scrollbar {
-  width: 15px;
 }
 .buy-now-close-button {
   position: absolute;
@@ -420,6 +417,9 @@ textarea {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal-thankyou-review-icon {
   stroke: #fd9222;
@@ -435,6 +435,7 @@ textarea {
   overflow: hidden;
 }
 .form-thankyou-review {
+  text-align: left;
   margin: 84px 24px 178px 58px;
 
   max-width: 229px;
@@ -495,6 +496,7 @@ textarea {
   .form-thankyou-review {
     max-width: 297px;
     margin: 163px 49px 163px 170px;
+    text-align: left;
   }
   .thankyou-review-icon {
     top: 100px;
@@ -508,10 +510,24 @@ textarea {
   .buy-now-tabzah {
     display: none;
   }
+  .form-thankyouu {
+    max-width: 219px;
+    margin-left: 68px;
+    margin-top: 84px;
+    padding: 0;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 767px) {
   .buy-now-formField.persInf {
     margin-top: 8px;
+  }
+  .form-thankyouu {
+    max-width: 219px;
+    margin-left: 68px;
+    margin-top: 84px;
+    padding: 0;
+    text-align: left;
   }
   /* <----------swiper----------> */
   .buy-now.swiper {
@@ -539,6 +555,7 @@ textarea {
     padding: 48px 0;
     width: 100%;
   }
+
   .buy-now-form {
     padding: 0 48px;
   }

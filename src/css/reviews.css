@@ -415,6 +415,9 @@ img {
   cursor: pointer;
   text-align: center;
   line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-thankyou-icon {
