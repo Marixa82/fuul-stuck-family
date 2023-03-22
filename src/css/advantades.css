@@ -1,11 +1,15 @@
 .benefits {
   background: #1e1823;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 72px;
 }
 .benefits-container {
   display: block;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 *,
 ::after,
@@ -69,7 +73,6 @@
 
 @media screen and (max-width: 767px) {
   .benefits-container {
-    margin: 0 auto;
     max-width: 375px;
     height: 100%;
     padding: 0 15px;
@@ -81,29 +84,26 @@
   .benefits-item:last-child {
     min-height: 225px;
   }
-  .benefits-list {
-    padding: 20px 5px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits-container {
+    padding: 0 32px;
     max-width: 768px;
     padding: 0 15px;
   }
   .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 100px;
   }
 
   .benefits-list {
     justify-content: start;
-    padding: 50px 17px;
     gap: 32px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  /* .benefits-container {
-    flex-basis: calc((100% - 32px) / 2);
-  } */
+
   .benefits-item:not(:last-child) {
     max-width: 336px;
   }
@@ -115,9 +115,12 @@
 }
 @media screen and (min-width: 1200px) {
   .benefits-container {
+    padding: 0 50px;
     max-width: 1200px;
   }
   .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 128px;
   }
   .benefits-item:not(:last-child) {
@@ -132,7 +135,6 @@
     flex-direction: row;
     gap: 70px;
     justify-content: center;
-    padding: 50px 35px;
   }
   .benefits-item:last-child {
     padding-bottom: 35px;
