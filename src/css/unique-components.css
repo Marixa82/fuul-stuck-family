@@ -1,13 +1,14 @@
 .container {
   /* padding: 0; */
 }
+
 .container-unique-components {
   max-width: 1166px;
   margin: 0 auto;
   /* outline: 2px solid green; */
   box-sizing: border-box;
   padding: 0 15px;
-  padding-bottom: 67px;
+  /* padding-bottom: 67px; */
   padding: 0;
 }
 .unique-components-item {
@@ -188,7 +189,7 @@
 @media screen and (min-width: 768px) {
   .container.container-unique-components {
     padding: 0;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     /* padding: 0; */
   }
   /* .container-unique-components {
