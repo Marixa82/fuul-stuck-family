@@ -179,6 +179,9 @@
   max-width: 609px;
   width: 100%;
 }
+.buy-now-modal::-webkit-scrollbar {
+  width: 15px;
+}
 .buy-now-close-button {
   position: absolute;
   top: 14px;
