@@ -168,6 +168,7 @@
 
 .mob-burger-socials {
   display: flex;
+  align-items: center;
 }
 
 .burger-soc-item:not(:last-child) {
@@ -206,17 +207,11 @@
     width: 32px;
   }
   .burger-svg {
-    width: 24px;
-    height: 16px;
     stroke-width: 2.5px;
   }
   .burger-menu-close {
-    width: 32px;
-    height: 32px;
   }
   .close-menu-icon {
-    width: 14px;
-    height: 14px;
   }
 
   .mob-burger-link.current {
@@ -230,9 +225,6 @@
   .container {
     max-width: 1166px;
     width: 100%;
-  }
-  .header-page {
-    background-color: #e2e2e2;
   }
   .header-logo {
     display: flex;

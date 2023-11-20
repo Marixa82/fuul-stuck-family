@@ -1,6 +1,6 @@
 .made {
-  margin-top: 128px;
   margin-bottom: 128px;
+  margin-top: 128px;
 }
 ul {
   list-style: disc;
@@ -68,17 +68,21 @@ ul {
 .made-video {
   width: 100%;
   margin-bottom: 20px;
- 
 }
 
 .video-ytb {
   display: block;
   border-radius: 15px;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 375px) {
+  .made {
+    margin-bottom: 72px;
+    margin-top: 72px;
+  }
   .container {
     max-width: 335px;
     margin-left: auto;
@@ -95,6 +99,10 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .made {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
   .container {
     max-width: 614px;
   }
@@ -130,6 +138,10 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
+  .made {
+    margin-bottom: 128px;
+    margin-top: 128px;
+  }
   .container {
     max-width: 1136px;
   }
