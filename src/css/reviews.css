@@ -7,6 +7,9 @@ img {
 .reviews-container {
   text-align: center;
   padding-bottom: 72px;
+  margin: 0 auto;
+  padding: 0px 10px 72px 10px;
+  outline: 2px solid green;
 }
 
 .reviews-title {
@@ -115,6 +118,7 @@ img {
   gap: 28px;
 }
 
+
 .reviews-customers-list .slick-dots li.slick-active button {
   background-color: var(--color-hover-orange);
   width: 28px;
@@ -147,11 +151,15 @@ img {
   background-color: rgba(17, 17, 17, 0.1);
 }
 
-/* Reviews-modal */
-
 /* adaptive */
 
 @media screen and (min-width: 375px) {
+  
+  .reviews-container {
+    max-width: 375px;
+    padding: 0 20px 72px 20px;
+  }
+
   .reviews-item {
     width: 335px;
   }
@@ -162,6 +170,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
+  .reviews-container {
+    max-width: 768px;
+    padding-bottom: 100px;
+    padding: 0 32px;
+  }
+
   .reviews-title {
     font-size: 24px;
     line-height: 28px;
@@ -176,7 +191,7 @@ img {
   }
 
   .slick-track {
-    gap: 16px;
+    justify-content: space-between;
   }
 
   .slick-slide {
@@ -193,6 +208,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  
+  .reviews-container {
+    max-width: 1200px;
+    padding-bottom: 128px;
+    padding: 0 32px;
+  }
+
   .reviews-item {
     width: 358px;
   }
@@ -201,9 +223,7 @@ img {
     padding-bottom: 128px;
   }
 
-  .slick-track {
-    gap: 28px;
-  }
+
 
   .slick-slide {
     max-width: 360px;
