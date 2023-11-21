@@ -385,7 +385,6 @@ textarea {
   max-width: 516px;
 }
 
-/* ------модал бай нав---- */
 /* ------------ */
 .modal-thankyou-buynow {
   width: 100%;
@@ -505,7 +504,7 @@ textarea {
   }
 }
 /*=================== THANK YOU BUY-NOW ===================*/
-/* <----------Form----------> */
+
 @media screen and (max-width: 375px) {
   .buy-now-tabzah {
     display: none;
